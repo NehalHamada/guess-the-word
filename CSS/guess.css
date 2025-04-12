@@ -196,6 +196,12 @@ h1 {
     .key-colors {
       width: 100%;
     }
+    .inputs > div input {
+      width: 60px;
+      height: 60px;
+      font-size: 40px;
+      margin: 8px;
+    }
   }
 }
 .message {
