@@ -1,6 +1,7 @@
 /* Start Variables*/
 :root {
   --primary-color: #f44336;
+  --main-color: white;
 }
 /* End Variables*/
 * {
@@ -30,7 +31,7 @@ body {
     .inputs input {
       width: 60px;
       height: 60px;
-      font-size: 50px;
+      font-size: 1.5rem;
     }
   }
 }
@@ -38,7 +39,7 @@ h1 {
   text-align: center;
   padding: 20px;
   margin: 0 0 50px;
-  background-color: white;
+  background-color: var(--main-color);
 }
 .guess-game {
   text-align: center;
@@ -70,9 +71,9 @@ h1 {
         width: 60px;
         height: 60px;
         text-align: center;
-        font-size: 50px;
+        font-size: 1.5rem;
         caret-color: var(--primary-color);
-        background-color: white;
+        background-color: var(--main-color);
         border: none;
         border-bottom: 3px solid #333;
         &:focus {
@@ -81,17 +82,17 @@ h1 {
         &.yes-in-place {
           background-color: #f89e13;
           border: #f89e13;
-          color: white;
+          color: var(--main-color);
         }
         &.not-in-place {
           background-color: #18ba89;
           border: #18ba89;
-          color: white;
+          color: var(--main-color);
         }
         &.no {
           background-color: #27303f;
           border: #27303f;
-          color: white;
+          color: var(--main-color);
         }
       }
     }
@@ -119,7 +120,7 @@ h1 {
         -ms-border-radius: 6px;
         -o-border-radius: 6px;
         border-radius: 6px;
-        color: white;
+        color: var(--main-color);
         cursor: pointer;
         font-weight: bold;
       }
@@ -135,7 +136,7 @@ h1 {
       display: flex;
       align-items: center;
       padding: 15px;
-      background-color: white;
+      background-color: var(--main-color);
       margin-bottom: 10px;
       .key {
         width: 30px;
@@ -197,7 +198,6 @@ h1 {
     .key-colors {
       width: 100%;
     }
-
   }
 }
 .message {
@@ -237,7 +237,7 @@ footer {
   left: 0;
   width: 100%;
   background-color: #333;
-  color: white;
+  color: var(--main-color);
   @media (max-width: 768px) {
     position: relative;
     bottom: auto;
